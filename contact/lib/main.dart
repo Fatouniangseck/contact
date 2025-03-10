@@ -17,9 +17,11 @@ class ContactApp extends StatelessWidget {
 
 class ContactList extends StatelessWidget {
   final List<Map<String, String>> contacts = [
-    {'nom': 'Alice Dupont', 'telephone': '0612345678'},
-    {'nom': 'Bob Martin', 'telephone': '0687654321'},
-    {'nom': 'Charlie Leblanc', 'telephone': '0711223344'},
+    {'nom': 'fatou seck niang', 'telephone': '786543209'},
+    {'nom': 'Fatoumata bintou diagne', 'telephone': '776543212'},
+    {'nom': 'Mamadou sy', 'telephone': '776543289'},
+    {'nom': 'Fatoumata ndiaye', 'telephone': '777843289'},
+    {'nom': 'mame  fatou ndiaye', 'telephone': '776545289'},
   ];
 
   @override
@@ -63,15 +65,15 @@ class ContactDetails extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text('Détails du contact')),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(20.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text('Nom: ${contact['nom']}', style: TextStyle(fontSize: 20)),
-            SizedBox(height: 10),
+            SizedBox(height: 15),
             Text(
               'Téléphone: ${contact['telephone']}',
-              style: TextStyle(fontSize: 16),
+              style: TextStyle(fontSize: 20),
             ),
           ],
         ),
